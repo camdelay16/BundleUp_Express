@@ -1,14 +1,14 @@
-const mongoose = require('mongoose')
+import mongoose from "mongoose";
 
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
-    console.log('Successfully connect to MongoDB')
+    console.log("Successfully connect to MongoDB");
   })
-  .catch(error => {
-    console.error('Connection Error', error.message)
-  })
+  .catch((error) => {
+    console.error("Connection Error", error.message);
+  });
 
-const db = mongoose.connection
+const db = mongoose.connection;
 
-module.exports = db
+module.exports = db;

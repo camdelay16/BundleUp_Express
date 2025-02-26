@@ -1,6 +1,6 @@
-const { Schema } = require("mongoose");
+import mongoose, { Schema } from "mongoose";
 
-const Deal = new Schema(
+const DealSchema = new Schema(
   {
     author: {
       type: Schema.Types.ObjectId,
@@ -61,4 +61,4 @@ const Deal = new Schema(
   { timestamps: true }
 );
 
-module.exports = Deal;
+export default DealSchema;

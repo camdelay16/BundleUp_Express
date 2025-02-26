@@ -1,6 +1,6 @@
-const { Schema } = require("mongoose");
+import mongoose, { Schema } from "mongoose";
 
-const Event = new Schema(
+const EventSchema = new Schema(
   {
     author: { type: Schema.Types.ObjectId, ref: "user_id" },
     eventTitle: { type: String, required: true },
@@ -34,4 +34,4 @@ const Event = new Schema(
   { timestamps: true }
 );
 
-module.exports = Event;
+export default EventSchema;

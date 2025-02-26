@@ -1,7 +1,8 @@
-const express = require("express");
+import express from "express";
+import { Deal } from "../models";
+import verifyToken from "../middlewares/verify-token";
+
 const router = express.Router();
-const { Deal } = require("../models");
-const verifyToken = require("../middlewares/verify-token");
 
 router.get("/", async (req, res) => {
   try {
