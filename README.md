@@ -1,3 +1,3 @@
 # BundleUp Backend
 
-## Please see the full readme here: https://github.com/kpthanh01/BundleUp_React
+## Please see the full readme here: https://github.com/camdelay16/BundleUp_React
