@@ -1,6 +1,6 @@
 import express from "express";
 import verifyToken from "../middlewares/verify-token.js";
-import { Event } from "../models";
+import { Event } from "../models/index.js";
 
 const router = express.Router();
 
@@ -69,4 +69,4 @@ router.delete("/:eventId", async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

@@ -1,6 +1,6 @@
 import express from "express";
-import verifyToken from "../middlewares/verify-token";
-import { Comment } from "../models";
+import verifyToken from "../middlewares/verify-token.js";
+import { Comment } from "../models/index.js";
 
 const router = express.Router();
 
@@ -79,4 +79,4 @@ router.delete("/:commentId", async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

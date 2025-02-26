@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
-import CommentSchema from "./comment";
-import EventSchema from "./event";
-import UserSchema from "./user";
-import DealSchema from "./deal";
+import CommentSchema from "./comment.js";
+import EventSchema from "./event.js";
+import UserSchema from "./user.js";
+import DealSchema from "./deal.js";
 
 const Comment = mongoose.model("Comment", CommentSchema);
 const Event = mongoose.model("Event", EventSchema);

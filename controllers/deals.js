@@ -1,6 +1,6 @@
 import express from "express";
-import { Deal } from "../models";
-import verifyToken from "../middlewares/verify-token";
+import { Deal } from "../models/index.js";
+import verifyToken from "../middlewares/verify-token.js";
 
 const router = express.Router();
 
@@ -76,4 +76,4 @@ router.delete("/:dealId", async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;
